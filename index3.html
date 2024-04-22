@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Mascotas</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1
+,100..700&family=Lugrasimo&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <div class="container">
+        <img src="images-removebg-preview.png" alt="100" width="100">
+        <center>
+            <h1>Formulario de Mascotas</h1>
+        </center>
+        <form action="/guardar" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre de Mascota:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="especie">Especie:</label>
+                <input type="text" id="especie" name="especie" required>
+            </div>
+            <div class="form-group">
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" name="raza" required>
+            </div>
+            <div class="form-group">
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+            </div>
+            <div class="form-group">
+                <label for="esterilizado">Esterilizado:</label>
+                <select id="esterilizado" name="esterilizado" required>
+                    <option value="Si">Sí</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fecha_nacimiento">Fecha de Nacimiento (o estimada):</label>
+                <input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="dd/mm/aaaa" required>
+            </div>
+            <div class="form-group">
+                <label for="razon_tenencia">Razón de Tenencia:</label>
+                <input type="text" id="razon_tenencia" name="razon_tenencia" required>
+            </div>
+            <div class="form-group">
+                <label for="firma">Firma:</label>
+                <input type="text" id="firma" name="firma" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre_declarante">Nombre Declarante:</label>
+                <input type="text" id="nombre_declarante" name="nombre_declarante" required>
+            </div>
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+</body>
+</html>
+
